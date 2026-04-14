@@ -78,8 +78,9 @@ For the closest match to the tested local environment, install from `requirement
 
 For Streamlit Community Cloud deployment, use `app/streamlit_app.py` as the entry point.
 This repository also includes a root `requirements.txt` so the deployment environment can resolve the application dependencies automatically.
+It also includes a root `packages.txt` for the Linux system packages required by OpenCV in Community Cloud.
 
-For the closest match to the verified local setup, choose Python `3.14` in the deployment settings when that option is available.
+For deployment stability, choose Python `3.13` or `3.14` in the deployment settings when those options are available.
 
 ## Running Tests
 
