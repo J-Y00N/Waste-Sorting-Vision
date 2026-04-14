@@ -1,0 +1,17 @@
+class_names:
+  0: Paper
+  1: Paper Pack
+  2: Paper Cup
+  3: Vinyl
+  4: Vinyl with Contaminants
+  5: Plastic
+  6: Plastic with Contaminants
+  7: Reusable Glass
+  8: Brown Glass
+  9: Green Glass
+  10: White Glass
+  11: Other Glass
+  12: Can
+  13: PET
+  14: Styrofoam
+  15: Battery

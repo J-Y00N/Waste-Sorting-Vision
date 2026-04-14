@@ -1,0 +1,13 @@
+models:
+  best:
+    display_name: best.pt
+    artifact_path: ./models/best.pt
+    env_var: WSV_MODEL_BEST
+    storage: local_or_external
+    notes: local development default checkpoint
+  best5:
+    display_name: best5.pt
+    artifact_path: ./models/best5.pt
+    env_var: WSV_MODEL_BEST5
+    storage: local_or_external
+    notes: alternate checkpoint exposed in the current app
