@@ -1,8 +1,14 @@
 # Waste Sorting Vision
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit-ff4b4b?logo=streamlit&logoColor=white)](https://waste-sorting-vision.streamlit.app/)
+![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.11-EE4C2C?logo=pytorch&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-111111)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.13-5C3EE8?logo=opencv&logoColor=white)
+
 YOLOv8-based household waste detection with a modular Streamlit inference app for image and video analysis.
 
-Tested locally with Homebrew Python `3.14`.
+[Live demo](https://waste-sorting-vision.streamlit.app/) • Tested locally with Homebrew Python `3.14`
 
 ## Overview
 
