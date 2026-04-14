@@ -49,7 +49,6 @@ def main() -> None:
     )
 
     model_options = list_model_options()
-    class_names = load_class_names()
 
     with st.sidebar:
         st.header("Inference Settings")
@@ -76,11 +75,16 @@ def main() -> None:
     try:
         model_path = resolve_model_path(model_key)
         detector = load_detector_cached(str(model_path))
+        class_names = load_class_names(model_key)
     except (ModelResolutionError, ImportError, ModuleNotFoundError) as exc:
         st.error(
             "Unable to load the configured checkpoint. Add the model file under "
             "`models/` or point the matching environment variable to a valid path."
         )
+        st.exception(exc)
+        st.stop()
+    except KeyError as exc:
+        st.error("Unable to resolve the label mapping for the selected checkpoint.")
         st.exception(exc)
         st.stop()
 

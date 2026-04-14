@@ -1,17 +1,36 @@
-class_names:
-  0: Paper
-  1: Paper Pack
-  2: Paper Cup
-  3: Vinyl
-  4: Vinyl with Contaminants
-  5: Plastic
-  6: Plastic with Contaminants
-  7: Reusable Glass
-  8: Brown Glass
-  9: Green Glass
-  10: White Glass
-  11: Other Glass
-  12: Can
-  13: PET
-  14: Styrofoam
-  15: Battery
+default_model_key: best5
+
+model_class_names:
+  best:
+    0: paper
+    1: can
+    2: glass
+    3: pet
+    4: plastic
+    5: vinyl
+    6: foam
+    7: battery
+    8: "paper + f_s"
+    9: "can + f_s"
+    10: "o glass + f_s"
+    11: "pet + f_s + m-p_m"
+    12: "plastic + f_s"
+    13: "vinyl + f_s"
+    14: "foam + f_s"
+  best5:
+    0: Paper
+    1: Paper Pack
+    2: Paper Cup
+    3: Vinyl
+    4: Vinyl with Contaminants
+    5: Plastic
+    6: Plastic with Contaminants
+    7: Reusable Glass
+    8: Brown Glass
+    9: Green Glass
+    10: White Glass
+    11: Other Glass
+    12: Can
+    13: PET
+    14: Styrofoam
+    15: Battery

@@ -28,15 +28,16 @@ Sample detection output from the current application:
 
 - image and video inference through a Streamlit app
 - configurable checkpoint selection for local evaluation
-- a 16-class application label set for household waste sorting
+- bundled 15-class and 16-class checkpoints for comparison
 - annotated image download for quick result review
 - project figures, result summaries, and workflow notes
 
 ## Results Snapshot
 
 - the recorded training history covers `8`, `11`, `15`, and `16`-class settings
-- the highest `mAP@50` listed in the summary table is `0.957`
-- the current app exposes the 16-class interface used for image and video inference
+- the highest `mAP@50` listed in the summary table is `0.957` from a `yolov8s`, `640`, `38,000` image, `8`-class experiment
+- the default app checkpoint is `best5.pt`, which uses a `16`-class label set
+- the alternate `best.pt` checkpoint uses a `15`-class label set embedded in the model
 
 Representative project figure:
 
@@ -124,6 +125,12 @@ If you later decide to move the checkpoints outside the repository, point those 
 - [Experiment history](docs/experiment_history.md)
 - [Preprocessing summary](docs/preprocessing_summary.md)
 - [Checkpoint storage strategy](docs/checkpoint_storage_strategy.md)
+
+## References
+
+- AI-Hub Household Waste Dataset: https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71385
+- Ultralytics YOLO: https://github.com/ultralytics/ultralytics
+- Streamlit: https://streamlit.io/
 
 ## Attribution
 

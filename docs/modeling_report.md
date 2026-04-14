@@ -26,6 +26,16 @@ For readability, the main experiment history is also summarised in table form in
 
 My work on the project centred on detection model training, inference, and application integration.
 
+## Best Recorded Configuration
+
+The highest recorded score in the archived summary came from the 6th training iteration:
+
+- model: `yolov8s`
+- image size: `640`
+- dataset volume: `38,000`
+- classes: `8`
+- `mAP@50`: `0.957`
+
 ## Reading Guide
 
 - The figures and tables in this document are presented as project results.

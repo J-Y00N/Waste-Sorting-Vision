@@ -36,8 +36,30 @@ It provides a compact view of how model size, image size, class design, and data
 Note:
 These metrics were recorded as `100 Epochs` and `best.pt` in the original summary document.
 
+## Best Recorded Configuration
+
+| Metric | Value |
+| --- | --- |
+| Training iteration | 6th |
+| Model | `yolov8s` |
+| Image size | `640` |
+| Dataset volume | `38,000` |
+| Classes | `8` |
+| Precision | `0.979` |
+| Recall | `0.99` |
+| F1 Score | `0.91` |
+| mAP@50 | `0.957` |
+
 ## Interpretation
 
 - The experiment history shows repeated iteration on class granularity, image size, and dataset scale.
 - The highest `mAP@50` value in the summary table is `0.957` for the 6th training iteration.
 - Later class expansion to 16 classes appears to have increased task difficulty relative to the 8-class setup.
+- The bundled app checkpoints represent later deployment-oriented label sets, not the 8-class run that achieved the highest recorded `mAP@50`.
+
+## Change Summary
+
+- Moving from early 15-class and 11-class settings to a tighter 8-class setup improved the recorded detection metrics.
+- Increasing the dataset volume from `9,000` to `38,000` images was associated with the strongest recorded result in the summary.
+- Expanding the task back to 16 classes appears to have reduced the recorded `mAP@50`, suggesting a trade-off between class granularity and detection performance.
+- Increasing image size to `1280` improved the later 8-class result relative to some earlier runs, but it still did not exceed the best score from the larger 38,000-image experiment.

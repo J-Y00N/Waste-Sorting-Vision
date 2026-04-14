@@ -1,13 +1,13 @@
 models:
   best:
-    display_name: best.pt
+    display_name: best.pt (15 classes)
     artifact_path: ./models/best.pt
     env_var: WSV_MODEL_BEST
     storage: local_or_external
-    notes: local development default checkpoint
+    notes: 15-class checkpoint with embedded checkpoint labels
   best5:
-    display_name: best5.pt
+    display_name: best5.pt (16 classes)
     artifact_path: ./models/best5.pt
     env_var: WSV_MODEL_BEST5
     storage: local_or_external
-    notes: alternate checkpoint exposed in the current app
+    notes: 16-class checkpoint used as the default app model

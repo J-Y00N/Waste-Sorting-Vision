@@ -26,7 +26,7 @@ def test_default_demo_assets_resolve() -> None:
 
 def test_model_options_expose_display_names() -> None:
     model_options = list_model_options()
-    assert model_options["best"] == "best.pt"
+    assert model_options["best"] == "best.pt (15 classes)"
 
 
 def test_model_path_resolves_primary_artifact_path_without_existence_check() -> None:
